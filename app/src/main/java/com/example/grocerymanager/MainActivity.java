@@ -3,9 +3,9 @@ package com.example.grocerymanager;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.chaquo.python.PyObject;
+/*import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
+import com.chaquo.python.android.AndroidPlatform;*/
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     Button Btn;
     TextView Tv;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+    private final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
@@ -55,11 +55,11 @@ public class MainActivity extends AppCompatActivity {
         Btn = (Button)findViewById(R.id.button3);
 
 
-        if(!Python.isStarted())
+        /*if(!Python.isStarted())
             Python.start(new AndroidPlatform(this));
         //final PyObject[] obj = {null};
         Python py = Python.getInstance();
-        final PyObject pyobj = py.getModule("script");
+        final PyObject pyobj = py.getModule("script");*/
 
         Btn.setOnClickListener(new View.OnClickListener() {
             @Override
